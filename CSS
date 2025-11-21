@@ -1,0 +1,134 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Controls styles */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+#inputArray {
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  width: 250px;
+  transition: border 0.3s;
+}
+
+#inputArray:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #2980b9;
+  color: #fff;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Visualizer styles */
+.visualizer {
+  width: 90%;
+  max-width: 1000px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow-x: auto;
+}
+
+#barsContainer {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  gap: 4px;
+  padding: 10px;
+}
+
+/* Bar styles */
+.bar {
+  background-color: #3498db;
+  width: 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.bar.min {
+  background-color: #e74c3c;
+}
+
+.bar.current {
+  background-color: #f39c12;
+}
+
+.bar.compared {
+  background-color: #9b59b6;
+}
+
+/* Status styles */
+.status {
+  font-size: 1.2em;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#statusText {
+  color: #34495e;
+}
