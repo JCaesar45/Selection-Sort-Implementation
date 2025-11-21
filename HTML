@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selection Sort Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Selection Sort Visualizer</h1>
+    <p>Watch the sorting algorithm in action. Enter numbers and see how selection sort works step-by-step!</p>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="inputArray" placeholder="Enter numbers separated by commas" />
+    <button id="generateBtn">Generate Random Array</button>
+    <button id="sortBtn">Start Sorting</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <section class="visualizer">
+    <div id="barsContainer"></div>
+  </section>
+
+  <section class="status">
+    <p id="statusText">Ready to visualize!</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
